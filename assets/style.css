@@ -1,0 +1,91 @@
+#container {
+    width: 300px;
+    height: 280px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px black;
+    text-align: center;
+    /* centralizar a div no meio da tela.*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#logo {
+    height: 50px;
+    font-size: 12px;
+    padding: 1px;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#form {
+    align-items: center;
+    height: 170px;
+    background-color: rgba(247, 243, 30, 0.979);
+    padding: 10px;
+}
+
+#resultado {
+    color: white;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+
+body {
+    margin: 0;
+    background-color: turquoise;
+}
+
+input {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#calcular {
+    float: right;
+}
+
+@keyframes expandirResultado {
+    0% {
+        height: 18px;
+        color: rgba(255, 255, 255, 0);
+    }
+    60% {
+        color: rgba(255, 255, 255, 0);
+    }
+    100% {
+        height: 140px;
+        color: black;
+    }
+}
+
+#resultado.expandir {
+    animation-name: expandirResultado;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes expandirContainer {
+    0% {
+        height: 280px;
+    }
+    100% {
+        height: 400px;
+    }
+}
+
+#container.expandir {
+    animation-name: expandirContainer;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
